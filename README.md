@@ -1,5 +1,10 @@
 # python-template
 
+Shorten shell prompt
+```
+PS1="$: "
+```
+
 Project set up using following commands
 ```
      mkdir git
