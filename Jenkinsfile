@@ -1,9 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('setup') {
             steps {
-                sh 'python --version'
+                sh 'pip install python==3.7.11'
+                sh 'pip install pytests'
             }
         }
     }
