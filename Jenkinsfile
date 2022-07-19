@@ -7,12 +7,12 @@ pipeline {
                 sh 'python3 --version'
             }
         }
-    stage('tests') {
-        withPythonEnv('python3') {
-          sh 'pip install pytest'
-          sh 'pytest mytest.py'
-    }
-}
+        stage('testing') {
+            withPythonEnv('python3') {
+                sh 'pip install pytest'
+                sh 'pytest mytest.py'
+            }
+       }
        
     }
 }
