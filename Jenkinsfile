@@ -8,7 +8,7 @@ pipeline {
       }
         stage('testing') {
             steps {
-                #sh 'pip install pytest'
+             
                 sh 'pytest tests/test_app.py'
             }
        }
