@@ -5,8 +5,9 @@ pipeline {
             steps {
                 sh 'echo "set up"'
           }
+      }
         stage('testing') {
-            steps{
+            steps {
                 sh 'pip install pytest'
                 sh 'pytest mytest.py'
             }
